@@ -1,0 +1,51 @@
+.listChild {
+  width: 70%;
+  background-color: white;
+  border-radius: 5px;
+  text-align: left;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.headerWrapper {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #9a9a9a;
+}
+
+.list {
+  list-style: none;
+}
+
+.expandButton {
+  display: none;
+}
+
+.footerButton {
+  border: none;
+  height: 50px;
+  width: 200px;
+  background-color: #446ce2;
+  position: absolute;
+  bottom: 25px;
+  color: white;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+  .listChild {
+    width: 100%;
+    border-radius: 0px;
+    height: 100%;
+  }
+
+  .expandButton {
+    background-color: white;
+    border: none;
+    display: block;
+  }
+
+  .headerWrapper {
+    border-bottom: none;
+  }
+}

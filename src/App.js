@@ -1,23 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Listcontainer from "./components/Listcontainer.js";
+import Chart from "./components/Chart.js";
+
+const items1 = [
+  "Item Name",
+  "Item Name",
+  "Item Name",
+  "Item Name",
+  "Item Name",
+  "Item Name",
+  "Item Name",
+  "Item Name",
+  "Item Name",
+  "Item Name",
+  "Item Name",
+];
+const items2 = ["Item Name", "Item Name", "Item Name", "Item Name"];
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Chart />
+      <div className="chartWrapper">
+        <Listcontainer items={items1} name="Header Text" />
+        <Listcontainer items={items2} name="This is a Long Header Text" />
+      </div>
     </div>
   );
 }
